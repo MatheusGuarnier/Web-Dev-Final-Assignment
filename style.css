@@ -1,0 +1,320 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: dimgray;
+}
+
+.name {
+    background-color: silver;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: 2px solid Black;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.5vw;
+    background-color: silver;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+nav button {
+    margin: 0 10px;
+    font-size: min(3vw, 30px);
+    text-decoration: none;
+    color: black;
+    background-color: silver;
+    padding: min(1vw, 10px);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+nav button:hover {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: rgb(105, 105, 105);
+}
+
+/*--------------------------------START HOME PAGE----------------------------------------*/
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.text, .image {
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: silver;
+    overflow: auto; 
+}
+
+.image {
+    width: 35%;
+}
+
+.text {
+    margin-top: 20px; 
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#title {
+    text-align: center;
+    font-size: min(4.2vw, 40px);
+}
+
+#text {
+    text-align: center;
+    font-size: min(3vw, 20px);
+    margin-top: 30px;
+    margin: auto;
+}
+
+/*--------------------------------END HOME PAGE----------------------------------------*/
+
+/*--------------------------------START COLLEGE PAGE----------------------------------------*/
+.course {
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: silver;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.course-title {
+    text-align: center;
+    font-size: min(4vw, 30px);
+}
+
+.course-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.course-text, .course-image {
+    width: 45%;
+}
+
+.course-text {
+    font-size: min(2.7vw, 20px);  
+}
+
+.course-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+/*--------------------------------END COLLEGE PAGE----------------------------------------*/
+
+/*--------------------------------START SPORT PAGE----------------------------------------*/
+.text-title {
+    text-align: center;
+    font-size: min(4vw, 30px);
+}
+
+.text-content {
+    font-size: min(2.8vw, 20px);
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: silver;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+
+/*--------------------------------END SPORT PAGE----------------------------------------*/
+
+/*--------------------------------START GAMING PAGE----------------------------------------*/
+#container_gaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#carouselExampleCaptions, .Games {
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: silver;
+    overflow: auto;
+    margin-top: 20px;
+}
+.Games {
+    width: 50%;
+}
+#carouselExampleCaptions {
+    width: 50%;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid black;
+}
+/*--------------------------------END GAMING PAGE----------------------------------------*/
+
+/*--------------------------------START SOCIAL PAGE----------------------------------------*/
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.box {
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: silver;
+    overflow: auto;
+
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.box ul li a {
+    font-size: min(2.8vw, 20px);
+}
+
+#contact-container {
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    background-color: silver;
+    overflow: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*--------------------------------END SOCIAL PAGE----------------------------------------*/
+
+/*--------------------------------START MEDIA QUERY MOBILE----------------------------------------*/
+@media screen and (max-width: 600px) {
+
+    /*-------------------HOME PAGE-------------------*/
+    .name {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: 100%;
+        padding: 5px;
+    }
+
+    .text {
+        width: 80%;
+    }
+    .image {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        
+    }
+    /*-------------------HOME PAGE-------------------*/
+
+    /*-------------------COLLEGE PAGE-------------------*/
+    .course {
+        width: 80%;
+    }
+    .course-content {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    
+    .course-text, .course-image {
+        width: 100%;
+    }
+
+    .course-image img {
+        height: auto;
+        object-fit: contain;
+    }
+    /*-------------------COLLEGE PAGE-------------------*/
+
+    /*-------------------SPORTS PAGE-------------------*/
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-top: 20px;
+        border: 1px solid black;
+    }
+    /*-------------------SPORTS PAGE-------------------*/
+
+    /*-------------------SOCIAL PAGE-------------------*/
+    #social-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, #contact-container {
+        width: 80%;
+    }
+
+    #contact-container {
+        font-size: min(2.8vw, 30px);
+    }
+
+    /*-------------------SOCIAL PAGE-------------------*/
+    /*-------------------GAMING PAGE-------------------*/
+    .Games {
+        width: 80%;
+    }
+    #carouselExampleCaptions {
+        width: 90%;
+    }
+    /*-------------------GAMING PAGE-------------------*/
+
+}
+/*--------------------------------END MEDIA QUERY MOBILE----------------------------------------*/
